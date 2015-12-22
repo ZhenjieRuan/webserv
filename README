@@ -1,0 +1,15 @@
+This project is a simple multi-process webserver written in C which is capable
+of serving static html file, static image, execute cgi script and dynamically generate
+histogram depends on user input(format:http://ip address:port/my_histogram?filename&pattern1&pattern2...)
+my_histogram is written in perl and using gnu_plot and support up to 5 patterns
+In order to run, you need to make first, then ./webserv <port_number>, the client can be 
+any modern browsers(chrome and firefox tested).The server is also capable of sending request status(200,404..) to
+an Arduino board, you will need an Arduino Uno compatible board with a 12 pin 4 digit 7 segment led display
+properly wired in order to display the status.
+
+Dependency and Requirement:
+Linux Kernel 3.x and greater
+libc
+gcc
+gunplot
+perl
